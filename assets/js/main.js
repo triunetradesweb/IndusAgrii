@@ -752,58 +752,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-/* ================= GUIDED SHOPPING → DIRECT PRODUCT ================= */
-document.addEventListener("click", async (e) => {
-  const card = e.target.closest(".guided-card");
-  if (!card) return;
-
-  e.preventDefault(); // ⛔ stop navigation
-
-  const type = card.dataset.type; // rice | millets
-  if (!type) return;
-
-  // Decide endpoint
-  const endpoint =
-    type === "rice"
-      ? "/IndusAgrii/public/rice.php"
-      : "/IndusAgrii/public/millets.php";
-
-  try {
-    const data = new FormData();
-    data.append("ajax", "1");
-    data.append("page", "1");
-    data.append("sort", "new");
-    data.append("search", "");
-    data.append("category", "all");
-
-    const res = await fetch(endpoint, {
-      method: "POST",
-      body: data
-    });
-
-    const json = await res.json();
-    if (!json || !json.html) return;
-
-    // Create temp DOM to read slug
-    const temp = document.createElement("div");
-    temp.innerHTML = json.html;
-
-    const firstCard = temp.querySelector(".product-card");
-    if (!firstCard) return;
-
-    const slug = firstCard.getAttribute("data-slug");
-    if (!slug) return;
-
-    // 🚀 DIRECT REDIRECT (no intermediate page)
-    window.location.href =
-      "/IndusAgrii/public/product-details.php?slug=" +
-      encodeURIComponent(slug);
-
-  } catch (err) {
-    console.error("Guided shopping redirect failed:", err);
-  }
-});
-
 
 /* =========================================================
    CART SYSTEM – PRODUCTS PAGE (FINAL & ISOLATED)

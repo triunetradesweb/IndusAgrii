@@ -75,20 +75,28 @@
 <div class="flex flex-col items-center pt-6 pb-6">
 
   <!-- SOCIAL LINKS -->
-  <div class="flex items-center gap-6 mb-5">
-    <?php foreach ([
-      ["url"=>"https://www.instagram.com/triunetrades","icon"=>"instagram"],
-      ["url"=>"https://www.linkedin.com/company/triune-trades/","icon"=>"linkedin-in"],
-      ["url"=>"https://www.facebook.com/share/1WrJuRwfPQ/","icon"=>"facebook-f"],
-      ["url"=>"https://x.com/triunetrades","icon"=>"x-twitter"]
-    ] as $s): ?>
-      <a href="<?= $s['url'] ?>"
-         aria-label="<?= ucfirst($s['icon']) ?> profile"
-         class="text-white/80 hover:text-white transition">
-        <i class="fa-brands fa-<?= $s['icon'] ?> text-lg" aria-hidden="true"></i>
-      </a>
-    <?php endforeach; ?>
-  </div>
+<div class="flex items-center gap-6 mb-5">
+  <?php foreach ([
+    ["url"=>"https://www.instagram.com/triunetrades","icon"=>"instagram"],
+    ["url"=>"https://www.linkedin.com/company/triune-trades/","icon"=>"linkedin-in"],
+    ["url"=>"https://www.facebook.com/share/1WrJuRwfPQ/","icon"=>"facebook-f"],
+    ["url"=>"https://x.com/triunetrades","icon"=>"x-twitter"]
+  ] as $s): ?>
+    <a href="<?= $s['url'] ?>"
+       aria-label="<?= ucfirst($s['icon']) ?> profile"
+       class="w-10 h-10 md:w-11 md:h-11
+              flex items-center justify-center
+              rounded-full
+              bg-white/20
+              text-white
+              transition-all duration-300
+              hover:bg-white/30
+              hover:scale-[1.04]
+              active:scale-95">
+      <i class="fa-brands fa-<?= $s['icon'] ?> text-lg md:text-xl" aria-hidden="true"></i>
+    </a>
+  <?php endforeach; ?>
+</div>
 
   <!-- DIVIDER -->
   <div class="w-full flex justify-center">

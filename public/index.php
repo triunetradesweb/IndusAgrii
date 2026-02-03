@@ -165,23 +165,24 @@ include "../includes/header.php";
     </p>
 
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-    <a href="#"
-      data-type="rice"
-      class="guided-card reveal rounded-2xl border p-6 text-center transition
-              hover:-translate-y-1 hover:shadow-lg
-              hover:border-brand-primary/40">
-        <i class="fa-solid fa-house text-3xl text-brand-primary mb-3 transition group-hover:scale-105"></i>
+
+      <!-- 1️⃣ All Categories -->
+      <a href="products.php"
+         class="guided-card reveal rounded-2xl border p-6 text-center transition
+                hover:-translate-y-1 hover:shadow-lg
+                hover:border-brand-primary/40">
+        <i class="fa-solid fa-house text-3xl text-brand-primary mb-3"></i>
         <h3 class="font-bold text-base mb-1">For Family Meals</h3>
         <p class="text-sm text-brand-muted">
           Soft, consistent rice for daily cooking.
         </p>
       </a>
 
-    <a href="#"
-      data-type="rice"
-      class="guided-card reveal rounded-2xl border p-6 text-center transition
-              hover:-translate-y-1 hover:shadow-lg
-              hover:border-brand-primary/40">
+      <!-- 2️⃣ Rice -->
+      <a href="rice.php"
+         class="guided-card reveal rounded-2xl border p-6 text-center transition
+                hover:-translate-y-1 hover:shadow-lg
+                hover:border-brand-primary/40">
         <i class="fa-solid fa-bowl-rice text-3xl text-brand-primary mb-3"></i>
         <h3 class="font-bold text-base mb-1">Everyday Rice</h3>
         <p class="text-sm text-brand-muted">
@@ -189,11 +190,11 @@ include "../includes/header.php";
         </p>
       </a>
 
-    <a href="#"
-      data-type="millets"
-      class="guided-card reveal rounded-2xl border p-6 text-center transition
-              hover:-translate-y-1 hover:shadow-lg
-              hover:border-brand-primary/40">
+      <!-- 3️⃣ Millets -->
+      <a href="millets.php"
+         class="guided-card reveal rounded-2xl border p-6 text-center transition
+                hover:-translate-y-1 hover:shadow-lg
+                hover:border-brand-primary/40">
         <i class="fa-solid fa-leaf text-3xl text-brand-primary mb-3"></i>
         <h3 class="font-bold text-base mb-1">Healthy Choices</h3>
         <p class="text-sm text-brand-muted">
@@ -201,20 +202,22 @@ include "../includes/header.php";
         </p>
       </a>
 
-    <a href="#"
-      data-type="millets"
-      class="guided-card reveal rounded-2xl border p-6 text-center transition
-              hover:-translate-y-1 hover:shadow-lg
-              hover:border-brand-primary/40">
+      <!-- 4️⃣ All Categories -->
+      <a href="products.php"
+         class="guided-card reveal rounded-2xl border p-6 text-center transition
+                hover:-translate-y-1 hover:shadow-lg
+                hover:border-brand-primary/40">
         <i class="fa-solid fa-utensils text-3xl text-brand-primary mb-3"></i>
         <h3 class="font-bold text-base mb-1">Traditional Taste</h3>
         <p class="text-sm text-brand-muted">
           Comforting, familiar grains.
         </p>
       </a>
+
     </div>
   </div>
 </section>
+
 
 <!-- ================= PREMIUM PRODUCTS ================= -->
 <section class="bg-white py-14 sm:py-16">
@@ -617,74 +620,107 @@ include "../includes/header.php";
 </section>
 
 <!-- ================= FAQ SECTION ================= -->
-<section class="bg-white py-14 sm:py-16">
-  <div class="max-w-6xl mx-auto px-6">
+<section class="bg-gray-50 py-16 sm:py-20" id="faq-section">
+  <div class="max-w-4xl mx-auto px-6">
 
-    <!-- HEADER -->
     <div class="text-center mb-12">
-      <h2 class="text-2xl sm:text-3xl font-extrabold">
+      <span class="text-brand-primary font-bold tracking-wide uppercase text-sm">Got Questions?</span>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-brand-dark">
         Frequently Asked Questions
       </h2>
-      <p class="mt-2 text-sm text-brand-muted max-w-xl mx-auto">
-        Clear and reliable answers to common questions about our grains,
-        sourcing practices, and everyday cooking.
+      <p class="mt-4 text-base text-brand-muted max-w-2xl mx-auto leading-relaxed">
+        Everything you need to know about our sourcing, delivery timelines, return policies, and product quality. Transparency is our priority.
       </p>
     </div>
 
-    <!-- FAQ LIST -->
     <div class="space-y-4">
 
-      <!-- ITEM -->
-      <div class="faq-item border border-gray-200 rounded-2xl p-6">
-        <button type="button"
-          class="faq-toggle flex w-full items-center justify-between font-semibold text-left">
-          Is your rice suitable for daily consumption?
-          <span class="arrow transition-transform duration-300">+</span>
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition hover:shadow-md">
+        <button type="button" class="faq-toggle flex w-full items-center justify-between p-6 font-bold text-left text-brand-dark hover:text-brand-primary transition-colors">
+          <span>Is your rice suitable for daily consumption?</span>
+          <span class="icon transition-transform duration-300 text-brand-primary text-xl">
+            <i class="fa-solid fa-plus"></i>
+          </span>
         </button>
-
-        <div class="faq-content hidden mt-4 text-sm text-brand-muted leading-relaxed">
-          Yes. IndusAgrii rice is carefully selected and processed specifically
-          for everyday home cooking. The grains cook evenly, absorb water
-          consistently, and maintain a soft texture throughout the meal.
-          <br>
-          This consistency allows households to cook daily meals without
-          needing to adjust water ratios or cooking time.
+        <div class="faq-content hidden px-6 pb-6 text-brand-muted text-sm sm:text-base leading-relaxed border-t border-gray-100 pt-4">
+          Absolutely. IndusAgrii rice (especially our Indrayani and Kala Namak varieties) is sourced and processed specifically for everyday home cooking. Unlike highly polished commercial rice that strips away nutrients, our grains retain their natural fiber and essential minerals.<br><br>
+          They cook evenly, are easy to digest, and are free from artificial glazing agents or wax, making them the healthiest choice for your family's daily meals.
         </div>
       </div>
 
-      <!-- ITEM -->
-      <div class="faq-item border border-gray-200 rounded-2xl p-6">
-        <button type="button"
-          class="faq-toggle flex w-full items-center justify-between font-semibold text-left">
-          How is IndusAgrii different from local market rice?
-          <span class="arrow transition-transform duration-300">+</span>
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition hover:shadow-md">
+        <button type="button" class="faq-toggle flex w-full items-center justify-between p-6 font-bold text-left text-brand-dark hover:text-brand-primary transition-colors">
+          <span>How is IndusAgrii different from local market rice?</span>
+          <span class="icon transition-transform duration-300 text-brand-primary text-xl">
+            <i class="fa-solid fa-plus"></i>
+          </span>
         </button>
-
-        <div class="faq-content hidden mt-4 text-sm text-brand-muted leading-relaxed">
-          Rice sold in local markets often comes from mixed or inconsistent
-          batches, which may vary in grain age, size, and moisture content.
-          This can result in unpredictable cooking outcomes.
-          <br>
-          IndusAgrii follows controlled sourcing and batch-level quality checks,
-          ensuring uniform grain quality and consistent cooking results
-          with every purchase.
+        <div class="faq-content hidden px-6 pb-6 text-brand-muted text-sm sm:text-base leading-relaxed border-t border-gray-100 pt-4">
+          Local market loose rice often comes from mixed batches with unknown origins, leading to inconsistent cooking (some grains remain hard, others become mushy). It is also frequently stored in open sacks, exposing it to dust and moisture.<br><br>
+          <strong>IndusAgrii Advantage:</strong> We source directly from specific regions (e.g., Maval for Indrayani). Every batch is lab-tested for purity, cleaned mechanically, and packed in hygienic, moisture-proof packaging to ensure the last cup tastes as fresh as the first.
         </div>
       </div>
 
-      <!-- ITEM -->
-      <div class="faq-item border border-gray-200 rounded-2xl p-6">
-        <button type="button"
-          class="faq-toggle flex w-full items-center justify-between font-semibold text-left">
-          How long can grains be stored without compromising quality?
-          <span class="arrow transition-transform duration-300">+</span>
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition hover:shadow-md">
+        <button type="button" class="faq-toggle flex w-full items-center justify-between p-6 font-bold text-left text-brand-dark hover:text-brand-primary transition-colors">
+          <span>How long does delivery take and what are the charges?</span>
+          <span class="icon transition-transform duration-300 text-brand-primary text-xl">
+            <i class="fa-solid fa-plus"></i>
+          </span>
         </button>
-
-        <div class="faq-content hidden mt-4 text-sm text-brand-muted leading-relaxed">
-          When stored under proper conditions, rice and millets can be safely
-          stored for several months without a noticeable loss in quality.
+        <div class="faq-content hidden px-6 pb-6 text-brand-muted text-sm sm:text-base leading-relaxed border-t border-gray-100 pt-4">
+          We strive to deliver your order as fresh as possible.
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li><strong>Metro Cities:</strong> 2 to 4 business days.</li>
+            <li><strong>Rest of India:</strong> 5 to 7 business days.</li>
+          </ul>
           <br>
-          Proper storage helps preserve flavour, texture, and cooking
-          performance throughout the product’s shelf life.
+          Shipping is calculated based on the weight of your order and your location. However, we frequently run <strong>Free Shipping</strong> offers on orders above a certain value. You can check the exact shipping cost on the Checkout page before payment.
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition hover:shadow-md">
+        <button type="button" class="faq-toggle flex w-full items-center justify-between p-6 font-bold text-left text-brand-dark hover:text-brand-primary transition-colors">
+          <span>What is your Return & Refund Policy?</span>
+          <span class="icon transition-transform duration-300 text-brand-primary text-xl">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+        </button>
+        <div class="faq-content hidden px-6 pb-6 text-brand-muted text-sm sm:text-base leading-relaxed border-t border-gray-100 pt-4">
+          We have a customer-friendly policy. While food products generally cannot be returned due to hygiene reasons, we offer a <strong>100% Replacement or Refund</strong> if:
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>The package arrives damaged or unsealed.</li>
+            <li>The product received is incorrect or expired.</li>
+            <li>There is a genuine quality issue with the grain.</li>
+          </ul>
+          <br>
+          Please report any issues to our support team within <strong>48 hours</strong> of delivery with photos, and we will resolve it immediately.
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition hover:shadow-md">
+        <button type="button" class="faq-toggle flex w-full items-center justify-between p-6 font-bold text-left text-brand-dark hover:text-brand-primary transition-colors">
+          <span>Is my personal information and payment safe?</span>
+          <span class="icon transition-transform duration-300 text-brand-primary text-xl">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+        </button>
+        <div class="faq-content hidden px-6 pb-6 text-brand-muted text-sm sm:text-base leading-relaxed border-t border-gray-100 pt-4">
+          Yes, your security is our top priority. We use industry-standard <strong>SSL encryption</strong> to protect your personal data. We do not store your credit/debit card details.<br><br>
+          All payments are processed through secure gateways (Razorpay/PhonePe) regulated by the RBI. We strictly adhere to a privacy policy that ensures your phone number and email are never sold to third parties.
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition hover:shadow-md">
+        <button type="button" class="faq-toggle flex w-full items-center justify-between p-6 font-bold text-left text-brand-dark hover:text-brand-primary transition-colors">
+          <span>Do you accept bulk orders for events or retail?</span>
+          <span class="icon transition-transform duration-300 text-brand-primary text-xl">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+        </button>
+        <div class="faq-content hidden px-6 pb-6 text-brand-muted text-sm sm:text-base leading-relaxed border-t border-gray-100 pt-4">
+          Yes! We supply to hotels, caterers, wedding planners, and retail shops. For bulk quantities (above 50kg), we offer special wholesale pricing and customized logistics support.<br><br>
+          Please visit our <a href="#" class="text-brand-primary font-semibold hover:underline">Contact Us</a> page or email us directly to get a quote.
         </div>
       </div>
 
@@ -730,17 +766,31 @@ document.addEventListener("DOMContentLoaded", () => {
     .forEach(el => observer.observe(el));
 });
 
-document.querySelectorAll(".faq-toggle").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const content = btn.nextElementSibling;
-    const arrow = btn.querySelector(".arrow");
+document.addEventListener('DOMContentLoaded', () => {
+    const toggles = document.querySelectorAll('.faq-toggle');
 
-    content.classList.toggle("hidden");
-    arrow.textContent = content.classList.contains("hidden") ? "+" : "−";
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.icon i');
+
+        // Toggle current item
+        if (content.classList.contains('hidden')) {
+            // Open
+            content.classList.remove('hidden');
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+            toggle.classList.add('bg-gray-50'); // Optional active state bg
+        } else {
+            // Close
+            content.classList.add('hidden');
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+            toggle.classList.remove('bg-gray-50');
+        }
+      });
+    });
   });
-});
-
-
 </script>
 
 

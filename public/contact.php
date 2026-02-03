@@ -94,8 +94,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <div>
             <h3 class="font-bold">Office</h3>
             <p class="text-brand-muted">
-              7th Floor, C/o Workhub,<br>
-              Baner Business Bay,<br>
+              Ishwari Apartment,<br>
+              HQ9C+P2F, Nandan Prospera Rd,<br>
+              Laxman Nagar, Baner,<br>
               Pune, Maharashtra 411045
             </p>
           </div>
@@ -105,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <i class="fa-solid fa-envelope text-brand-primary text-xl mt-1"></i>
           <div>
             <h3 class="font-bold">Email</h3>
-            <p class="text-brand-muted">support@indusagrii.com</p>
+            <p class="text-brand-muted">contact@triunetrades.com</p>
           </div>
         </div>
 
@@ -113,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <i class="fa-solid fa-phone text-brand-primary text-xl mt-1"></i>
           <div>
             <h3 class="font-bold">Phone</h3>
-            <p class="text-brand-muted">+91 XXXXX XXXXX</p>
+            <p class="text-brand-muted">+91 96071 11550</p>
           </div>
         </div>
       </div>
@@ -133,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             class="w-full h-full"
-            src="https://www.google.com/maps?q=7th%20Floor%2C%20C%2Fo%20Workhub%2C%20Baner%20Business%20Bay%20Pune%2C%20Maharashtra%20411045&output=embed">
+            src="https://www.google.com/maps?q=Ishwari%20Apartment%20HQ9C%2BP2F%20Nandan%20Prospera%20Rd%20Laxman%20Nagar%20Baner%20Pune%20Maharashtra%20411045&output=embed">
           </iframe>
         </div>
       </div>
